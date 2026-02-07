@@ -5,4 +5,4 @@ cargo bench --bench ddh-dvrf_frost_bench -- --noploth
 ``` 
 runs 4-out-of-5 attestation JF DKG > DDH-DVRF > FROST TSS
 
-Warning: This code is a research prototype. Do not use it in production.
+Warning!: This code is a research prototype. Do not use it in production.
