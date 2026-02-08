@@ -7,6 +7,7 @@ use k256::{
     elliptic_curve::{ops::Reduce, FieldBytes, bigint::U256},
 };
 
+
 use crate::utils::{prove_eq, verify_eq, lagrange_combine_points};
 
 pub type Identifier        = frost::Identifier;
@@ -28,7 +29,6 @@ pub fn scalar_from_keypackage(kk: &KeyPackage) -> Scalar {
 /// Retrieve each participant’s public share (vk_i) from the PublicKeyPackage → k256 Point
 pub fn vk_share_from_public_pkg(pkpkg: &PublicKeyPackage, id: Identifier) -> ProjectivePoint {
     // Common API pattern: either `verifying_key_shares()` map or `verifying_key_share(id)`.
-    // I’m showing both variants; keep whichever line matches your implementation.
     let vk_share = pkpkg
         .verifying_shares()
         .get(&id)
@@ -86,3 +86,6 @@ pub fn run_ddh_dvrf_once(
 
     (v, exported_points_for_debug)
 }
+
+
+

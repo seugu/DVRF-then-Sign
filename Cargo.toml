@@ -31,3 +31,8 @@ harness = false
 name = "ddh-dvrf_frost_bench_withDKG"
 path = "benches/ddh-dvrf_frost_bench_withDKG.rs"
 harness = false
+
+[[bench]]
+name = "network_cost_bench"
+path = "benches/network_cost_bench.rs"
+harness = false
