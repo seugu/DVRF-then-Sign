@@ -36,3 +36,8 @@ harness = false
 name = "network_cost_bench"
 path = "benches/network_cost_bench.rs"
 harness = false
+
+[[bench]]
+name = "wan_simulation_bench"
+path = "benches/wan_simulation_bench.rs"
+harness = false
