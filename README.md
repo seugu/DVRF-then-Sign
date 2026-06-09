@@ -1,3 +1,6 @@
+## This repo is moved to https://github.com/CanDenizGokgedik/collusion-resistant-zktls-gnark 
+
+
 This repo contains DVRF and Treshold signature framework for: Provably Secure and Collusion-Resistant TLS Attestation Protocols for Decentralized Applications
 
 We have 4 benchmarks that run the DVRF-then-TSS part for t-out-of-n nodes, (5, 3), (9, 5), (13, 7), (19, 10), (29, 15), (39, 20), (59, 30), (99, 50) including LAN and WAN (simulated).
